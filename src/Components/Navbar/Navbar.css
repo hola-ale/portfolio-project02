@@ -1,0 +1,25 @@
+header {
+    background-color: palevioletred;
+}
+
+nav {
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav * {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+nav *:hover {
+    color: darkmagenta;
+}
+
+.activLink {
+    color: darkmagenta;
+    background-color: beige;
+}
