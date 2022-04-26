@@ -6,17 +6,20 @@ export default function Navbar() {
     return(
        <header>
            <div className="container">
+               <a href="/">
+                    <img className="nav-logo" src={require("../../images/monstera-leaf.png")} alt="logo" />
+               </a>
                <nav>
-                   <NavLink exact to="/" activeClassName="activLink">
+                   <NavLink exact activeClassName="active" to="/">
                        Home
                    </NavLink>
-                   <NavLink to="/post">
+                   <NavLink activeClassName="active" to="/post">
                        Blog Post
                    </NavLink>
-                   <NavLink to="/project">
+                   <NavLink activeClassName="active" to="/project">
                        Projects
                    </NavLink>
-                   <NavLink to="/about">
+                   <NavLink activeClassName="active" to="/about">
                        About Me!
                    </NavLink>
                </nav>

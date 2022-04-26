@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #5b513b;
+}
+.curved {
+    text-align: center;
+    background: #f6f1ea;
+    background-image: url(../../images/chris-lee-70l1tDAI6rM-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: screen;
+}
+
+.svg-margin {
+    margin-bottom: -4px;
+}

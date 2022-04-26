@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #5b513b;
+}
+
+main {
+    padding: 2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.page-title,
+.page-description {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr); 
+    gap: 1.5em;
+}
+
+.single-post {
+    background-color: #f6f1ea;
+    padding: 1em;
+    border-radius: 2%;
+}
+
+.single-post:hover {
+    box-shadow: 2px 5px 5px #d6b0ac;
+}
+
+.post-img {
+    width: 100%;
+    aspect-ratio: 10/12;
+    object-fit: cover;
+    border-radius: 1%;
+    margin-bottom: .5em;
+}
