@@ -21,7 +21,7 @@ export default function Post() {
             }`)
             .then((data) => setPostData(data))
             .catch(console.error);
-    }, []);
+    }, [postData]);
     return(
         <main>
             <section>
