@@ -26,7 +26,6 @@ export default function Post() {
         <main>
             <section>
                 <h1 className="page-title">Blog Posts Page</h1>
-                <h2 className="page-description">Welcome to my page of blog posts</h2>
                 <div className="posts-grid">
                     {postData && postData.map((post, index) => ( 
                     <article className="single-post">
