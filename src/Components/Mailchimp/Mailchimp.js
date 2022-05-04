@@ -56,7 +56,7 @@ const CustomForm = ({ status, message, onValidated }) => {
               type="text"
               name="firstName"
               value={firstName}
-              onChangeHandler={setFirstName}
+              onChange={(e) => setFirstName(e.target.value)}
               placeholder="Jane"
               isRequired
             />
@@ -67,14 +67,16 @@ const CustomForm = ({ status, message, onValidated }) => {
               type="text"
               name="email"
               value={email}
-              onChangeHandler={setEmail}
+              onChange={(e) => setEmail(e.target.value)}
               placeholder="your@email.com"
               isRequired
             />
           </label>
         </div>
       ) : null}
-      <input name="subscribe" type="submit" value="Submit" />
+      {status !== "success" ? (
+        <input name="subscribe" type="submit" value="Submit" />
+      ) : null}
     </form>
   );
 };
