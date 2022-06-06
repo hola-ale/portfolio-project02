@@ -40,10 +40,13 @@ export default () =>
               S.listItem()
                 .title("Catch Me locations")
                 .child(
-                  S.document()
-                    .schemaType("details")
-                    .documentId("details")
-                    .title("Catch Me locations")
+                  S.documentTypeList("details").title("Locations"),
+                  S.listItem().child((id) =>
+                    S.document()
+                      .schemaType("details")
+                      .documentId(id)
+                      .title("Catch Me location")
+                  )
                 ),
             ])
         ),

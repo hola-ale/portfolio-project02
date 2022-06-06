@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import sanityClient from "../../client.js";
 import "./Home.css";
 import MailchimpFormContainer from "../Mailchimp/Mailchimp";
 

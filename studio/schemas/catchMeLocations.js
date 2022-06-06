@@ -5,7 +5,7 @@ export default {
   fields: [
     {
       name: "body",
-      title: "Details",
+      title: "Location",
       type: "blockContent",
     },
   ],
